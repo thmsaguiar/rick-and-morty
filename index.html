@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/jng" href="src/img/favicon.png"/>
+    <title>Rick And Morty Characters</title>
+</head>
+
+<body>
+    <div class="fundo portal"></div>
+    <header>
+        <img class="logo" src="src/img/banner.png" alt="logo da serie rick and morty">
+
+        <form id="form" class="form" onsubmit="searchCharacters(event)">
+            <input type="text" name="buscar" id="input" placeholder="Digite o nome do personagem" />
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+    <main class="container">           
+        <section class="list" id="list">
+        </section>        
+        
+        <div class="buttons">            
+            <button id="prev" class="prev" onclick="prevPage()"><</button>            
+            <button id="next" class="next" onclick="nextPage()">></button>            
+        </div>
+    </main>
+    <script src="src/js/scripts.js"></script>
+</body>
+<footer>
+    <p>Desenvolvido por </p>
+    <a href="https://github.com/thmsaguiar" target="_blank">@thmsaguiar</a>
+</footer>
+</html>

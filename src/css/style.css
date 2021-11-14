@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+
+
+body {
+    font-size: 100%;
+    background-color: #000;
+    font-family: cursive;
+}
+
+header {    
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+header .logo {
+    width: 20%;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list{
+    margin-top: 150px;
+}
+
+.form {
+    display: flex;    
+    margin: auto;
+    margin-right: 60px;
+}
+
+.form input {
+    padding: 1rem;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(187, 185, 185, 0.411);
+    border: 1px solid rgba(43, 43, 43, 0.411);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.form button {
+    outline: none;
+    border: 1px solid #43843E;
+    border-radius: 5px;
+    box-shadow: 0 0 0.5em #43843E;
+    background-color: #448C3F;
+    color: white;
+    margin-left: 10px;
+    padding: 1rem;    
+    font-family: cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button {
+    color:rgba(255, 255, 255, 0.726);    
+    outline: none;
+    background: transparent;
+    border: none !important;
+    margin-left: 10px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 23%;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 10px;
+    color: #000;
+}
+
+.card-header {
+    padding: 1rem;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Get Schwifty';
+}
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 1rem;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card-body p {
+    font-size: 1.2rem;
+}
+.buttons button:hover{
+    color: #66BA4F;    
+}
+.next{
+    font-size: 50px;
+    padding:5px; 
+    position:fixed;
+    top:350px;
+    right: 50px;
+}
+.prev{
+    font-size: 50px;
+    padding:5px; 
+    position:fixed;
+    top:350px;
+    left: 50px;
+}
+
+footer{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    padding: 30px 0;
+}
+
+footer a{
+    margin-left: 10px;
+    cursor: pointer;
+    color:#A9CB48;
+}
+
+.fundo{
+    position: fixed;
+    z-index:-100;
+}
+.portal {
+    background-color: #66BA4F;  
+    box-shadow: 0px 0px 40px 10px #448C3F;
+    height: 35em;
+    width: 35em;
+    border-radius: 50%;
+    margin: 42px 30%;
+    background: 
+    radial-gradient(circle at 77% 80%, #FDFEB4 2.5%, transparent 2.5%),
+    radial-gradient(circle at 75% 83%, #FDFEB4 2%, transparent 2%),
+    radial-gradient(circle at 79% 83%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 45% 13%, #FFFFD5 1.5%, transparent 1.5%),
+    radial-gradient(circle at 42% 13%, #FFFFD5 2%, transparent 2%),
+    radial-gradient(circle at 38% 14%, #FFFFD5 1.5%, transparent 1.5%),
+    radial-gradient(circle at 20% 24%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 21% 23%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 51% 13%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 81% 33%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 85% 36%, #FDFEB4 2%, transparent 2%),
+    radial-gradient(circle at 21% 46%, #FDFEB4 1%, transparent 1%),
+    radial-gradient(circle at 20% 51%, #FDFEB4 2%, transparent 2%),
+    radial-gradient(circle at 53% 51%, transparent 64%, #43A93E 64%),
+    radial-gradient(circle at 47% 59%, transparent 64%, #43843E 64%),
+    radial-gradient(circle at 47% 60%, transparent 59%, #1A9042 59%),
+    radial-gradient(circle at 50% 59%, transparent 55%, #1B863C 55%),
+    radial-gradient(circle at 45% 60%, transparent 55%, #399C49 55%),
+    radial-gradient(circle at 47% 60%, transparent 46%, #1A9042 46%),
+    radial-gradient(circle at 46% 55%, transparent 43%, #75B03B 43%),
+    radial-gradient(circle at 36% 55%, transparent 43%, #A9CB48 43%),
+    radial-gradient(circle at 50% 60%, transparent 40%, #66BA4F 40%),
+    radial-gradient(circle at 50% 53%, transparent 40%, #E5E051 37%),
+    radial-gradient(circle at 30% 48%, transparent 40%, #EAF157 37%),
+    radial-gradient(circle at 57% 69%, transparent 40%, #EAF157 40%),
+    radial-gradient(circle at 40% 88%, transparent 40%, #E9E072 37%),
+    radial-gradient(circle at 67% 54%, transparent 40%, #FAEB7B 37%),
+    radial-gradient(circle at 49% 35%, transparent 40%, #FFF8C5 37%),
+    radial-gradient(circle at 79% 59%, transparent 40%, #FFFE9C 37%),
+    radial-gradient(circle at 50% 50%, #FDFEB4 100%, #FDFEB4 100%);
+}
