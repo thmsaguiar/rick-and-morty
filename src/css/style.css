@@ -14,7 +14,7 @@
 body {
     font-size: 100%;
     background-color: #000;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 header {    
@@ -226,10 +226,12 @@ footer a{
     
     .form input {        
         width: auto;
+        font-size: 12px;
     }
     
     .form button {
-        width: auto;
+        width: 80px;
+        font-size: 12px;
     }
 
     .list{
@@ -245,6 +247,14 @@ footer a{
     .portal{
         height: 20em;
         width: 20em;
-        margin: 40% 20%;
+        margin: 40% 10%;
+    }
+
+    .prev{
+        left: 10px;
+    }
+    
+    .next{
+        right: 10px;
     }
 }
