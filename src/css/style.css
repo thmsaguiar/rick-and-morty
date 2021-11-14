@@ -206,3 +206,45 @@ footer a{
     radial-gradient(circle at 79% 59%, transparent 40%, #FFFE9C 37%),
     radial-gradient(circle at 50% 50%, #FDFEB4 100%, #FDFEB4 100%);
 }
+
+@media (max-width: 760px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    header .logo {
+        width: 30%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .form {
+        margin-bottom: 20px;
+    }
+    
+    .form input {        
+        width: auto;
+    }
+    
+    .form button {
+        width: auto;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .card{
+        width: 50%;
+    }
+
+    .portal{
+        height: 20em;
+        width: 20em;
+        margin: 40% 20%;
+    }
+}
