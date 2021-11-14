@@ -14,7 +14,7 @@
 body {
     font-size: 100%;
     background-color: #000;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: cursive;
 }
 
 header {    
@@ -68,7 +68,7 @@ header .logo {
     color: white;
     margin-left: 10px;
     padding: 1rem;    
-    font-family: cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
     cursor: pointer;
     text-transform: uppercase;
@@ -208,6 +208,7 @@ footer a{
 }
 
 @media (max-width: 760px){
+    
     header{
         display: flex;
         flex-direction: column;
