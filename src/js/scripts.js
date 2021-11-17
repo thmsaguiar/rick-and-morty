@@ -1,5 +1,6 @@
 const urlApi = 'https://rickandmortyapi.com/api/character/';
 const listEl = document.getElementById('list');
+const logoEl = document.getElementById('logo');
 
 let nextUrl = '';
 let prevUrl = '';
@@ -48,6 +49,7 @@ const render = (characters) => {
     </div>
     `)
     })        
+
 }
 
 const nextPage = () => {
@@ -56,8 +58,11 @@ const nextPage = () => {
 const prevPage = () => {
     getCharacters(prevUrl);
 }
+const homePage = () => {
+    getCharacters(urlApi);
+}
 
-const resultPage = (qtd = '') => {     
+const resultPage = () => {     
     document.getElementById("prev").style.display = 'block';
     document.getElementById("next").style.display = 'block';
     if (nextUrl == null) {
@@ -67,6 +72,5 @@ const resultPage = (qtd = '') => {
         document.getElementById("prev").style.display = 'none';
     }
 }
-
 
 getCharacters(urlApi);
