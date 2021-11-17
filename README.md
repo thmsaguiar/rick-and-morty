@@ -5,7 +5,7 @@
   
 ## Sobre
 
-Uma das minhas animações preferidas é [Rick And Morty](https://rickandmorty.fandom.com/wiki/Rickipedia). Em Rick And Morty existem muitas dimensões, universos e multiversos diferentes, que nos traz muitas variações de um mesmo personagem. Então resolvi desenvolver um projeto simples para listar os diferentes tipos de um mesmo personagem, que tenha aparecido na série, apresentando sua espécie, origem e gênero. Para isso, foi utilizei a [API de Rick And Morty](https://rickandmortyapi.com/).
+Uma das minhas animações preferidas é [Rick And Morty](https://rickandmorty.fandom.com/wiki/Rickipedia). Em Rick And Morty existem muitas dimensões, universos e multiversos diferentes, que nos traz muitas variações de um mesmo personagem. Então resolvi desenvolver um projeto simples para listar os diferentes tipos de um mesmo personagem, que tenha aparecido na série, apresentando sua espécie, origem e gênero. Para isso, foi utilizado a [API de Rick And Morty](https://rickandmortyapi.com/).
 
 ### A API Rick And Morty
 
