@@ -1,30 +1,30 @@
 const urlApi = 'https://rickandmortyapi.com/api/character/';
 const listEl = document.getElementById('list');
 
-let atual = '';
 let nextUrl = '';
 let prevUrl = '';
 let numPages = '';
 
 const getCharacters = async (url, name = '') => {
     if (name !== '') {
-        var response = await fetch(`${url}?name=${name}`)
+        var response = await fetch(`${url}?name=${name}`);        
     } else {
-        var response = await fetch(url)
+        var response = await fetch(url);        
     }
-
+    
     const data = await response.json();
     nextUrl = data.info.next;
     prevUrl = data.info.prev;
-    numPages = data.info.pages;
-    atual = parseInt(nextUrl.substring(nextUrl.indexOf('=')+1, nextUrl.length))-1;
+    numPages = data.info.pages;    
+    
     const characters = data.results;
     render(characters);
+
     resultPage();
 }
 
 const searchCharacters = (evento) => {
-    evento.preventDefault();
+    evento.preventDefault();    
     const name = document.querySelector('input').value;
     getCharacters(urlApi, name);
 }
@@ -47,7 +47,7 @@ const render = (characters) => {
       </div>
     </div>
     `)
-    })    
+    })        
 }
 
 const nextPage = () => {
@@ -57,15 +57,14 @@ const prevPage = () => {
     getCharacters(prevUrl);
 }
 
-const resultPage = () => {    
-    let final = parseInt(numPages)-1;
+const resultPage = (qtd = '') => {     
     document.getElementById("prev").style.display = 'block';
     document.getElementById("next").style.display = 'block';
-    if (atual == '1') {
-        document.getElementById("prev").style.display = 'none';     
+    if (nextUrl == null) {
+        document.getElementById("next").style.display = 'none';     
     }
-    if (atual == final) {
-        document.getElementById("next").style.display = 'none';
+    if (prevUrl == null) {        
+        document.getElementById("prev").style.display = 'none';
     }
 }
 
